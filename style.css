@@ -1,60 +1,59 @@
-body, #typingEffect{
-    background-color: pink;
-    font-size: 20px;
-    font-weight: 800;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body, #typingEffect {
+    background-color: #501F3A;
+    font-size: 42px;
+    font-weight: 600;
+    color: #14A098;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
+    color: #14A098;
+    font-weight: 300;
+    font-size: 20px;
 }
 
-#container{
+#container {
     display: flex;
     height: 80vh;
     flex-direction: row;
     justify-content: center;
+    margin-top: 80px; /* To avoid content being hidden under navbar */
 }
 
-
-#timeline{
-    background-color: blue;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.navBar{
+.navBar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 15px;
-    margin-bottom: 20px;
-    background-color: rgb(239, 121, 141);
-    color: black;
-
+    background-color: #0F292F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
-#hangmanBox{
+#hangmanBox {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.keys{
-    width: 80vh;
+.keys {
+    width: 82vh;
 }
-.btn{
-    background-color: wheat;
+
+.btn {
+    background-color: #CB2D6F;
     font-size: 15px;
     padding: 15px;
     margin: 5px;
     flex-grow: 1;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 800;
-    color: black;
+    color: #CCCCCC;
     border-radius: 4px;
     border: none;
     text-decoration: none;
@@ -65,8 +64,8 @@ button:disabled {
     cursor: not-allowed;
 }
 
-.wordBox{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.wordBox {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 800;
     font-size: 30px;
     display: flex;
@@ -77,7 +76,7 @@ button:disabled {
 .wordBox span {
     font-size: 24px;
     display: inline-block;
-    width: 20px; /* Ensure consistent width */
+    width: 20px;
     text-align: center;
 }
 
@@ -94,5 +93,54 @@ button:disabled {
     }
 }
 
+.description{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    color: #CCCCCC;
+    margin:0;
+}
 
+/* Pop-up Bar Style */
+.popup {
+    position: fixed;
+    top: 50%; /* Vertically center the pop-up */
+    left: 50%; /* Horizontally center the pop-up */
+    transform: translate(-50%, -50%); /* Offset by 50% of its size to center it perfectly */
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    background-color: #14A098;
+    color: #0F292F;
+    padding: 20px 40px; /* Adjust padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure it's above other content */
+}
 
+/* Pop-up content: For text */
+.popup p {
+    font-size: 18px;
+    margin-right: 20px; /* Space between message and button */
+}
+
+/* Button Style */
+.popup button {
+    background-color: #501F3A;
+    color: #14A098;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex; /* Set button as flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 auto; /* Optional: to center the button within the container */
+}
+
+.popup button:hover {
+    background-color: #0F292F;
+    color: #CB2D6F;
+}
