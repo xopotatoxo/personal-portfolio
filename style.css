@@ -1,0 +1,98 @@
+body, #typingEffect{
+    background-color: pink;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#timeline{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(239, 121, 141);
+    color: black;
+
+}
+
+#hangmanBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.keys{
+    width: 80vh;
+}
+.btn{
+    background-color: wheat;
+    font-size: 15px;
+    padding: 15px;
+    margin: 5px;
+    flex-grow: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.wordBox{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.wordBox span {
+    font-size: 24px;
+    display: inline-block;
+    width: 20px; /* Ensure consistent width */
+    text-align: center;
+}
+
+.wordBox .blinking {
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
