@@ -93,11 +93,9 @@ function fadeInImage() {
 }
 
 function isWordComplete() {
-    // Check if all letters in answerArr are filled correctly
     return answerArr.join("") === word.join("");
 }
 
-// Pop-up function for Game Over
 function showGamePopup(message) {
     const popup = document.createElement("div");
     popup.classList.add("popup");
@@ -115,6 +113,7 @@ function showGamePopup(message) {
 }
 
 function closePopup() {
+    resetGame();
     const popup = document.querySelector(".popup");
     popup.classList.remove("active"); // Trigger fade-out
     setTimeout(() => {
@@ -123,7 +122,6 @@ function closePopup() {
 }
 
 function resetGame() {
-    // Reset all game variables
     answerArr = [];
     currentChar = '';
     count = 6;
