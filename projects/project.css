@@ -29,8 +29,7 @@ a {
     font-size: 20px;
 }
 
-
-.pOne, .pTwo, .pThree{
+.pOne, .pTwo, .pThree {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,10 +41,10 @@ a {
     font-size: 18px;  /* Set a comfortable font size */
     box-shadow: 0px 0px 6px 6px #14A098;
     transition: transform 0.3s ease;
-
 }
+
 /* Optional: Add hover effect to make it interactive */
-.pOne:hover, .pTwo:hover, .pThree:hover{
+.pOne:hover, .pTwo:hover, .pThree:hover {
     transform: scale(1.02);  /* Slightly enlarge the section on hover */
 }
 
@@ -53,13 +52,40 @@ a {
     padding-top: 20px; /* Small padding for breathing space */
 }
 
-.title{
+.title {
     font-size: 32px;
     color: #CCCCCC;
 }
 
-li{
+li {
     color: #14A098;
     font-style: italic;
     line-height: 1.6;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Add some padding to avoid content touching the edges */
+        grid-template-rows: auto 1fr; /* Keep grid structure but adjust rows for mobile */
+    }
+
+    .navBar {
+        flex-direction: column; /* Stack navbar items vertically */
+        padding: 10px;
+    }
+
+    .pOne, .pTwo, .pThree {
+        margin: 20px;  /* Reduce space around content on mobile */
+        padding: 15px;  /* Adjust padding for mobile screens */
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+
+    .title {
+        font-size: 24px; /* Smaller title font size for mobile */
+    }
+
+    li {
+        font-size: 16px; /* Reduce font size for list items */
+    }
 }

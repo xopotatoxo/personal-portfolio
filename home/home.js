@@ -101,7 +101,7 @@ function showGamePopup(message) {
     popup.classList.add("popup");
     popup.innerHTML = `<div class="popup-content">
                          <p>${message}</p>
-                         <button onclick="closePopup()">Try Again</button>
+                         <button onclick="closePopup()">Play Again</button>
                        </div>`;
 
     document.body.appendChild(popup);

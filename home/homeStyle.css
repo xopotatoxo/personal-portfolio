@@ -98,7 +98,7 @@ button:disabled {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
     color: #CCCCCC;
-    margin:0;
+    margin: 0;
 }
 
 /* Pop-up Bar Style */
@@ -145,3 +145,57 @@ button:disabled {
     color: #CB2D6F;
 }
 
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+    body, #typingEffect {
+        font-size: 28px; /* Adjust font size for mobile */
+    }
+
+    #container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .navBar {
+        flex-direction: column; /* Stack navbar items vertically */
+        padding: 10px;
+    }
+
+    .keys {
+        width: 70vh; /* Adjust key width for smaller screens */
+    }
+
+    .btn {
+        font-size: 14px; /* Smaller font size for buttons */
+        padding: 10px;
+        margin: 3px; /* Adjust margin for mobile */
+    }
+
+    .wordBox {
+        font-size: 24px; /* Adjust word box font size for mobile */
+    }
+
+    .wordBox span {
+        font-size: 20px;
+        width: 30px; /* Adjust word box span width for mobile */
+    }
+
+    .description {
+        font-size: 16px; /* Smaller description font */
+    }
+
+    .popup {
+        flex-direction: column; /* Stack pop-up content vertically */
+        padding: 15px 30px; /* Adjust padding for mobile */
+    }
+
+    .popup p {
+        font-size: 16px; /* Smaller font size for popup text */
+    }
+
+    .popup button {
+        font-size: 14px; /* Smaller font size for buttons */
+        padding: 8px 16px; /* Adjust padding for buttons */
+    }
+}

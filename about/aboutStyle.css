@@ -1,17 +1,21 @@
 body {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #501F3A;
     color: #14A098;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .navBar {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Keep navbar horizontal on all devices */
     justify-content: space-evenly;
     padding: 15px;
     background-color: #0F292F;
@@ -29,16 +33,17 @@ a {
     font-size: 20px;
 }
 
-#aboutContainer{
+#aboutContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .slider {
     position: relative;
-    width: 60%;
+    width: 90%;
     max-width: 300px;
     overflow: hidden;
     border: 2px solid #ddd;
@@ -80,41 +85,68 @@ button:hover {
     right: 10px;
 }
 
-.aboutMe{
+.aboutMe {
     display: flex;
-    flex-direction: row;
-    width: 50%;
+    flex-direction: column;
+    width: 90%;
     background-color: #0F292F;
-    margin: 20px;  /* Space around the content */
-    padding: 50px;  /* Space inside the content */
-    border-radius: 1%;  /* Rounded corners */
-    color: #CCCCCC;  /* Text color to contrast with the background */
-    font-size: 18px;  /* Set a comfortable font size */
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    color: #CCCCCC;
+    font-size: 16px;
     box-shadow: 0px 0px 6px 6px #14A098;
     transition: transform 0.3s ease;
     font-style: italic;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
-.aboutMe:hover{
+.aboutMe:hover {
     transform: scale(1.02);
 }
 
 .socials {
     display: flex;
     flex-direction: row;
-    padding: 15px;
+    padding: 10px;
     background-color: #0F292F;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-    justify-content: center; /* Center the items */
-    align-items: center; /* Vertically center the items */
+    justify-content: center;
+    align-items: center;
 }
 
 .socials a {
-    margin: 0 30px; /* Add space between the items */
+    margin: 0 15px;
 }
 
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+    }
+
+    #aboutContainer {
+        flex-direction: row;
+    }
+
+    .aboutMe {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body, #aboutContainer, .aboutMe, .socials {
+        flex-direction: row;
+    }
+
+    .aboutMe {
+        width: 50%;
+    }
+
+    .slider {
+        width: 60%;
+    }
+}
