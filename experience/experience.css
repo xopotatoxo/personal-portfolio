@@ -67,7 +67,7 @@ a {
 
 .one, .two, .three, .four {
     background-color: #0F292F; /* Existing background */
-    margin: 20px;  /* Space around the content */
+    margin: 30px;  /* Space around the content */
     padding: 20px;  /* Space inside the content */
     border-radius: 1%;  /* Rounded corners */
     color: #14A098;  /* Text color to contrast with the background */
@@ -102,4 +102,12 @@ li{
 .title{
     font-weight: 600;
     color: #CCCCCC;
+}
+
+.education{
+    color: #CCCCCC;
+    font-style: italic;
+    margin: 10px;
+    padding: 0px 40px 0px 40px;
+    text-align: center;
 }

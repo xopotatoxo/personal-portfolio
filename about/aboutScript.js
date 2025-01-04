@@ -19,9 +19,3 @@ next.addEventListener('click', () => {
     index = (index + 1) % totalSlides; // Loop back to first slide
     updateSlide();
 });
-
-// Auto-slide (optional)
-setInterval(() => {
-    index = (index + 1) % totalSlides;
-    updateSlide();
-}, 5000);

@@ -5,13 +5,13 @@ let count = 6;
 let gameOver = false; 
 
 const images = [
-    "images/hang0.gif",
-    "images/hang1.gif",
-    "images/hang2.gif",
-    "images/hang3.gif",
-    "images/hang4.gif",
-    "images/hang5.gif",
-    "images/hang6.gif"
+    "../images/hang0.gif",
+    "../images/hang1.gif",
+    "../images/hang2.gif",
+    "../images/hang3.gif",
+    "../images/hang4.gif",
+    "../images/hang5.gif",
+    "../images/hang6.gif"
 ];
 
 const imgElement = document.querySelector(".img img");
