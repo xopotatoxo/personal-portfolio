@@ -30,12 +30,11 @@ a {
 
 #timeline {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top:2%;
-    gap: 20px;
     box-sizing: border-box;
 }
 
@@ -69,16 +68,14 @@ a {
 
 .one, .two, .three, .four {
     background-color: #0F292F;
-    margin: 20px;
-    padding: 20px;
+    margin: 2%;
+    padding: 3%;
     border-radius: 10px;
     color: #14A098;
     font-size: 18px;
     box-shadow: 0px 0px 6px 6px #14A098;
     transition: transform 0.3s ease;
-    max-width: 1400px;
-    width: 100%;
-    box-sizing: border-box;
+    width: 90%;
 }
 
 .one:hover, .two:hover, .three:hover, .four:hover {
@@ -117,20 +114,27 @@ li {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     #timeline {
         flex-direction: row;
         justify-content: space-between;
-        gap: 0;
+        margin-top: 8%;
+    }
+
+    .one, .two, .three, .four{
+        width: 75%;
+        margin: 8%;
+        padding: 5%;
+    }
+
+    .general-text{
+        margin-top: 15%;
+    }
+
+    .exp{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
     }
 }
 
-@media (min-width: 1024px) {
-    body, #timeline {
-        flex-direction: row;
-    }
-
-    .one, .two, .three, .four {
-        width: 97%;
-    }
-}

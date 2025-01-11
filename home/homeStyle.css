@@ -148,54 +148,53 @@ button:disabled {
 /* Responsive Styles for Mobile View */
 @media (max-width: 768px) {
     body, #typingEffect {
-        font-size: 28px; /* Adjust font size for mobile */
+        font-size: 28px;
+        padding: 2%;
+        margin: 2%;
     }
 
     #container {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
+        flex-direction: column;
         height: auto;
         margin-top: 60px;
     }
 
-    .navBar {
-        flex-direction: column; /* Stack navbar items vertically */
-        padding: 10px;
-    }
-
     .keys {
-        width: 70vh; /* Adjust key width for smaller screens */
+        width: 48vh;
+        margin: 3%;
     }
 
     .btn {
-        font-size: 14px; /* Smaller font size for buttons */
+        font-size: 14px;
         padding: 10px;
-        margin: 3px; /* Adjust margin for mobile */
+        margin: 3px;
     }
 
     .wordBox {
-        font-size: 24px; /* Adjust word box font size for mobile */
+        font-size: 24px;
     }
 
     .wordBox span {
         font-size: 20px;
-        width: 30px; /* Adjust word box span width for mobile */
-    }
-
-    .description {
-        font-size: 16px; /* Smaller description font */
+        width: 30px;
     }
 
     .popup {
-        flex-direction: column; /* Stack pop-up content vertically */
-        padding: 15px 30px; /* Adjust padding for mobile */
+        flex-direction: column;
+        padding: 15px 15px;
+        text-align: center;
     }
 
     .popup p {
-        font-size: 16px; /* Smaller font size for popup text */
+        font-size: 16px;
     }
 
     .popup button {
-        font-size: 14px; /* Smaller font size for buttons */
-        padding: 8px 16px; /* Adjust padding for buttons */
+        font-size: 16px;
+        padding: 8px 16px;
     }
-}
+
+    .description{
+        text-align: center;
+    }
+} 

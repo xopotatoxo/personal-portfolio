@@ -35,10 +35,11 @@ a {
 
 #aboutContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 5%;
 }
 
 .slider {
@@ -48,6 +49,7 @@ a {
     overflow: hidden;
     border: 2px solid #ddd;
     border-radius: 8px;
+    margin: 3%;
 }
 
 .slides {
@@ -123,30 +125,14 @@ button:hover {
     margin: 0 15px;
 }
 
-@media (min-width: 768px) {
-    body {
-        flex-direction: row;
-    }
-
+@media (max-width: 768px) {
     #aboutContainer {
-        flex-direction: row;
-    }
-
-    .aboutMe {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1024px) {
-    body, #aboutContainer, .aboutMe, .socials {
-        flex-direction: row;
-    }
-
-    .aboutMe {
-        width: 50%;
+        margin: 55px; /* Adjust space between sections for mobile */
+        flex-direction: column;
     }
 
     .slider {
-        width: 60%;
+        width: 100%; 
+        margin-top: 220%;
     }
 }

@@ -44,7 +44,7 @@ alphabet.split("").forEach(letter => {
             fillWord();
             if (isWordComplete()) {
                 gameOver = true;
-                showGamePopup("Yay! You guessed it right! WELCOME to my page");
+                showGamePopup("Yay! You guessed it right! WELCOME to my page!");
             }
         } else if (count > 0) {
             count--;
